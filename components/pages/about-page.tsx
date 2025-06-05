@@ -166,7 +166,7 @@ const alumni = [
     },
   },
   {
-    name: "",
+    name: "Vishnu Neupane",
     position: "Former IT Lead",
     year: "2022",
     image: "",
@@ -180,33 +180,31 @@ const alumni = [
 // Advisers
 const advisers = [
   {
-    name: "Dr. Raj Kumar",
-    position: "Technical Advisor",
-    expertise: "AI & Machine Learning",
+    name: "Dinesh Thapa",
+    position: "Adviser",
+  
     image: "",
     social: {
-      linkedin: "https://linkedin.com/in/drrajkumar",
-      twitter: "https://twitter.com/drrajkumar",
+      linkedin: "",
+      twitter: "",
     },
   },
   {
-    name: "Prof. Sarita Singh",
-    position: "Faculty Advisor",
-    expertise: "Web Development",
+    name: "Arbind Kumar Dubey",
+    position: "Adviser",
     image: "",
     social: {
-      linkedin: "https://linkedin.com/in/saritasingh",
-      github: "https://github.com/saritasingh",
+      linkedin: "",
+      github: "",
     },
   },
   {
-    name: "Er. Binod Joshi",
-    position: "Industry Advisor",
-    expertise: "Cybersecurity",
+    name: "Vishnu Neupane",
+    position: "Adviser",
     image: "",
     social: {
-      linkedin: "https://linkedin.com/in/binodjoshi",
-      website: "https://binodjoshi.com",
+      linkedin: "",
+      website: "",
     },
   }
 ]
@@ -395,16 +393,16 @@ export default function AboutPage() {
           {/* Tabs */}
           <div className="flex justify-center mb-12">
             <div className="card-glow rounded-full p-1">
-             <button
-                onClick={() => setActiveTab("alumni")}
+           {/*    <button
+                onClick={() => setActiveTab("advisers")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
-                  activeTab === "alumni" ? "bg-[#5bbcff] text-white glow-button" : "text-gray-300 hover:text-white"
+                  activeTab === "advisers" ? "bg-[#5bbcff] text-white glow-button" : "text-gray-300 hover:text-white"
                 }`}
               >
-               ADVISIORS
+               ADVISERS
               </button>
-              {/*
-              <button
+                */}
+            <button
                 onClick={() => setActiveTab("advisers")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
                   activeTab === "advisers" ? "bg-[#5bbcff] text-white glow-button" : "text-gray-300 hover:text-white"
@@ -412,7 +410,7 @@ export default function AboutPage() {
               >
                 Advisers
               </button>
-              */}
+            
             </div>
           </div>
 
