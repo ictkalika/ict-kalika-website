@@ -8,159 +8,207 @@ import { X, Linkedin, Github, Twitter, Instagram, ExternalLink, Mail } from "luc
 // Board of Directors (with images)
 const boardMembers = [
   {
-    name: "John Doe",
+    name: "Siddhant Panthi",
     position: "President",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Leading the club with passion for technology and innovation.",
-    skills: ["Leadership", "Web Development", "Project Management"],
+    image: "/images/siddhant-panthi.jpg",
+    bio: "",
+    skills: [""],
     social: {
-      linkedin: "https://linkedin.com/in/johndoe",
-      github: "https://github.com/johndoe",
-      twitter: "https://twitter.com/johndoe",
+      linkedin: "https://linkedin.com/in/siddhantpanthi",
+      github: "https://github.com/siddhantpanthi",
     },
   },
   {
-    name: "Jane Smith",
+    name: "SANGOG PANDEY",
     position: "Vice President",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Coordinating events and fostering collaboration among members.",
-    skills: ["Event Management", "UI/UX Design", "Team Building"],
+    image: "/images/sangog-pandey.jpg",
+    bio: "",
+    skills: [""],
     social: {
-      linkedin: "https://linkedin.com/in/janesmith",
-      github: "https://github.com/janesmith",
-      instagram: "https://instagram.com/janesmith",
+      linkedin: "https://linkedin.com/in/sangogpandey",
+      github: "https://github.com/sangogpandey",
+      instagram: "https://instagram.com/sangogpandey",
     },
   },
   {
-    name: "Mike Johnson",
-    position: "Technical Lead",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Guiding technical projects and mentoring junior members.",
-    skills: ["Full Stack Development", "DevOps", "Mentoring"],
-    social: {
-      linkedin: "https://linkedin.com/in/mikejohnson",
-      github: "https://github.com/mikejohnson",
-      website: "https://mikejohnson.dev",
-    },
-  },
-  {
-    name: "Sarah Wilson",
+    name: "Ramat Neupane",
     position: "Secretary",
-    image: "/placeholder.svg?height=200&width=200",
-    bio: "Managing communications and documentation for the club.",
-    skills: ["Documentation", "Communication", "Organization"],
+    image: "/images/ramat-neupane.jpg",
+    bio: "",
+    skills: [""],
     social: {
-      linkedin: "https://linkedin.com/in/sarahwilson",
-      twitter: "https://twitter.com/sarahwilson",
-      email: "sarah@ictkalika.com",
+      linkedin: "https://linkedin.com/in/ramatneupane",
+      github: "https://github.com/ramatneupane",
+      website: "https://ramatneupane.dev",
+    },
+  },
+    {
+    name: "SHASANK SHRESTHA",
+    position: "Treasurer",
+    image: "/images/shasank-shrestha.jpg",
+    bio: "",
+    skills: [""],
+    social: {
+      linkedin: "https://linkedin.com/in/shasankshrestha",
+      email: "shasankshrestha59@gmail.com",
+    },
+  },
+  {
+    name: "NAYAN ACHARYA",
+    position: "IT",
+    image: "/images/nayan-acharya.jpg",
+    bio: "",
+    skills: [""],
+    social: {
+      linkedin: "https://linkedin.com/in/nayan135",
+      twitter: "https://twitter.com/nooneknows135",
+      email: "nayan@nayanacharya.xyz",
+    },
+  },
+   {
+    name: "NARAYAN BHUSAL",
+    position: "IT",
+    image: "/images/narayan-bhusal.jpg",
+    bio: "",
+    skills: [""],
+    social: {
+      linkedin: "https://linkedin.com/in/naranbhusal02",
+      twitter: "https://twitter.com/naranbhusal02",
+      email: "narayan@ypstem.org",
+    },
+  },
+   
+  {
+    name: "NISHAN REGMI",
+    position: "MEDIA",
+    image: "/images/nishan-regmi.jpg",
+    bio: "",
+    skills: [""],
+    social: {
+      linkedin: "https://linkedin.com/in/nishanregmi",
+      email: "nishanregmi@gmail.com",
+    },
+  },
+    {
+    name: "Prazwal Roka",
+    position: "EXECUTIVE MEMBER",
+    image: "/images/prazwal-roka.jpg",
+    bio: "",
+    skills: [""],
+    social: {
+      linkedin: "https://linkedin.com/in/prazwalroka",
+      email: "prazwalroka@gmail.com",
     },
   },
 ]
 
 // Regular Members (names and socials only)
 const members = [
-  {
-    name: "Alex Chen",
-    position: "Marketing Head",
+ 
+    {
+    name: "ICT KALIKA",
+    position: "MEMBER",
     social: {
-      linkedin: "https://linkedin.com/in/alexchen",
-      instagram: "https://instagram.com/alexchen",
-      twitter: "https://twitter.com/alexchen",
+      linkedin: "https://linkedin.com/in/ictkalika",
+      instagram: "https://instagram.com/ictkalika",
+      twitter: "https://twitter.com/ictkalika",
     },
   },
-  {
-    name: "Priya Sharma",
-    position: "Event Coordinator",
+    {
+    name: "ICT KALIKA",
+    position: "MEMBER",
     social: {
-      linkedin: "https://linkedin.com/in/priyasharma",
-      github: "https://github.com/priyasharma",
-      email: "priya@ictkalika.com",
+      linkedin: "https://linkedin.com/in/ictkalika",
+      instagram: "https://instagram.com/ictkalika",
+      twitter: "https://twitter.com/ictkalika",
     },
   },
-  {
-    name: "David Kumar",
-    position: "Technical Mentor",
+   {
+    name: "ICT KALIKA",
+    position: "MEMBER",
     social: {
-      linkedin: "https://linkedin.com/in/davidkumar",
-      github: "https://github.com/davidkumar",
-      website: "https://davidkumar.tech",
+      linkedin: "https://linkedin.com/in/ictkalika",
+      instagram: "https://instagram.com/ictkalika",
+      twitter: "https://twitter.com/ictkalika",
     },
   },
-  {
-    name: "Lisa Patel",
-    position: "Design Lead",
+     {
+    name: "ICT KALIKA",
+    position: "MEMBER",
     social: {
-      linkedin: "https://linkedin.com/in/lisapatel",
-      behance: "https://behance.net/lisapatel",
-      instagram: "https://instagram.com/lisapatel",
-    },
-  },
-  {
-    name: "Raj Thapa",
-    position: "Content Creator",
-    social: {
-      linkedin: "https://linkedin.com/in/rajthapa",
-      twitter: "https://twitter.com/rajthapa",
-      instagram: "https://instagram.com/rajthapa",
-    },
-  },
-  {
-    name: "Maya Gurung",
-    position: "Social Media Manager",
-    social: {
-      linkedin: "https://linkedin.com/in/mayagurung",
-      instagram: "https://instagram.com/mayagurung",
-      facebook: "https://facebook.com/mayagurung",
-    },
-  },
-  {
-    name: "Arjun Shrestha",
-    position: "Workshop Coordinator",
-    social: {
-      linkedin: "https://linkedin.com/in/arjunshrestha",
-      github: "https://github.com/arjunshrestha",
-      email: "arjun@ictkalika.com",
-    },
-  },
-  {
-    name: "Sita Rai",
-    position: "Public Relations",
-    social: {
-      linkedin: "https://linkedin.com/in/sitarai",
-      twitter: "https://twitter.com/sitarai",
-      email: "sita@ictkalika.com",
-    },
-  },
+      linkedin: "https://linkedin.com/in/ictkalika",
+      instagram: "https://instagram.com/ictkalika",
+      twitter: "https://twitter.com/ictkalika",
+    }
+  }
 ]
 
+// Alumni members
 const alumni = [
   {
-    name: "Alex Chen",
-    position: "Software Engineer at Google",
-    image: "/placeholder.svg?height=150&width=150",
-    year: "2022",
+    name: "DINESH THAPA",
+    position: "",
+    year: "2023",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/rameshsharma",
+      twitter: "https://twitter.com/rameshsharma",
+    },
   },
   {
-    name: "Maria Garcia",
-    position: "Product Manager at Microsoft",
-    image: "/placeholder.svg?height=150&width=150",
-    year: "2021",
+    name: "ARBIND DUBEY",
+    position: "Former Secretary",
+    year: "2022",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/priyapatel",
+      github: "https://github.com/priyapatel",
+    },
   },
+  {
+    name: "",
+    position: "Former IT Lead",
+    year: "2022",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/sanjaythapa",
+      github: "https://github.com/sanjaythapa",
+    },
+  }
 ]
 
+// Advisers
 const advisers = [
   {
-    name: "Dr. Robert Brown",
-    position: "Computer Science Professor",
-    image: "/placeholder.svg?height=150&width=150",
+    name: "Dr. Raj Kumar",
+    position: "Technical Advisor",
     expertise: "AI & Machine Learning",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/drrajkumar",
+      twitter: "https://twitter.com/drrajkumar",
+    },
   },
   {
-    name: "Prof. Lisa Davis",
-    position: "IT Department Head",
-    image: "/placeholder.svg?height=150&width=150",
-    expertise: "Cybersecurity & Networks",
+    name: "Prof. Sarita Singh",
+    position: "Faculty Advisor",
+    expertise: "Web Development",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/saritasingh",
+      github: "https://github.com/saritasingh",
+    },
   },
+  {
+    name: "Er. Binod Joshi",
+    position: "Industry Advisor",
+    expertise: "Cybersecurity",
+    image: "",
+    social: {
+      linkedin: "https://linkedin.com/in/binodjoshi",
+      website: "https://binodjoshi.com",
+    },
+  }
 ]
 
 export default function AboutPage() {
@@ -341,13 +389,13 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-white text-center mb-16 glow-text"
           >
-            Alumni & Advisers
+            Advisers
           </motion.h2>
 
           {/* Tabs */}
           <div className="flex justify-center mb-12">
             <div className="card-glow rounded-full p-1">
-              <button
+           {/*   <button
                 onClick={() => setActiveTab("alumni")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
                   activeTab === "alumni" ? "bg-[#5bbcff] text-white glow-button" : "text-gray-300 hover:text-white"
@@ -355,6 +403,7 @@ export default function AboutPage() {
               >
                 Alumni
               </button>
+*/}
               <button
                 onClick={() => setActiveTab("advisers")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
@@ -418,6 +467,8 @@ export default function AboutPage() {
             <button
               onClick={() => setSelectedMember(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-white"
+              title="Close details"
+              aria-label="Close details"
             >
               <X size={24} />
             </button>
