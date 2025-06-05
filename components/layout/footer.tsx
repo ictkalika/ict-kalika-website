@@ -30,11 +30,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <MapPin size={16} className="text-[#9bd3ff]" />
-                <span className="text-sm">ICT Kalika, Nepal</span>
+                <span className="text-sm">Butwal, Nepal</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-300">
                 <Phone size={16} className="text-[#9bd3ff]" />
-                <span className="text-sm">+977-XXX-XXXX</span>
+                <span className="text-sm">+9779748703502</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,10 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">© 2024 ICT Club of K.M.G.S.S. All rights reserved. | Est. 2079</p>
+          <p className="text-gray-400 text-sm">© 2025 ICT Club of K.M.G.S.S. All rights reserved. | Est. 2079</p>
+          <p className="text-gray-400 text-sm mt-2">
+            Made with <span className="text-red-500">♥</span> by NAYAN & NARAYAN 
+          </p>
         </div>
       </div>
     </motion.footer>
