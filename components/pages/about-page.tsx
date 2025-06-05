@@ -81,7 +81,7 @@ const boardMembers = [
   {
     name: "NISHAN REGMI",
     position: "MEDIA",
-    image: "/images/nishan-regmi.jpg",
+    image: "https://storage.tally.so/private/inbound5447591931717511682.jpg?id=E0DyjB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkUwRHlqQiIsImZvcm1JZCI6Ind6UkVPRSIsImlhdCI6MTc0OTEyODA3NX0.2CTpAvwu_RXW9bSYkVgRcAbtM_YwzDSAoVn7n6u7FDw&signature=0f81f6034d38c3925c078457f14b42bf6c600c75b98d11e0b9eebf44a279df37",
     bio: "",
     skills: [""],
     social: {
@@ -395,15 +395,15 @@ export default function AboutPage() {
           {/* Tabs */}
           <div className="flex justify-center mb-12">
             <div className="card-glow rounded-full p-1">
-           {/*   <button
+             <button
                 onClick={() => setActiveTab("alumni")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
                   activeTab === "alumni" ? "bg-[#5bbcff] text-white glow-button" : "text-gray-300 hover:text-white"
                 }`}
               >
-                Alumni
+               ADVISIORS
               </button>
-*/}
+              {/*
               <button
                 onClick={() => setActiveTab("advisers")}
                 className={`px-8 py-3 rounded-full font-semibold transition-all duration-300 ${
@@ -412,6 +412,7 @@ export default function AboutPage() {
               >
                 Advisers
               </button>
+              */}
             </div>
           </div>
 
