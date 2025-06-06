@@ -12,7 +12,7 @@ const boardMembers = [
     position: "President",
     image: "/images/siddhant-panthi.jpg",
     bio: "Leading the club with passion for technology and innovation.",
-    skills: ["Leadership", "Web Development", "Project Management"],
+    skills: ["Leadership", "Web Development", "Project Management","Graphics Designing"],
     social: {
       linkedin: "https://linkedin.com/in/siddhantpanthi",
       github: "https://github.com/siddhantpanthi",
@@ -34,7 +34,7 @@ const boardMembers = [
     name: "Ramat Neupane",
     position: "Secretary",
     image: "/images/ramat-neupane.jpg",
-    bio: "Managing communications and documentation for the club.",
+    bio: "Documentation for the club.",
     skills: ["Documentation", "Communication", "Organization"],
     social: {
       linkedin: "https://linkedin.com/in/ramatneupane",
@@ -67,7 +67,7 @@ const boardMembers = [
   },
   {
     name: "NARAYAN BHUSAL",
-    position: "IT Coordinator",
+    position: "IT Co-Lead",
     image: "/images/narayan-bhusal.jpg",
     bio: "Supporting technical initiatives and member development.",
     skills: ["Web Development", "Mentoring", "Project Coordination"],
