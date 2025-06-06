@@ -10,7 +10,7 @@ const boardMembers = [
   {
     name: "Siddhant Panthi",
     position: "President",
-    image: "/images/siddhant-panthi.jpg",
+    image: "https://avatars.githubusercontent.com/u/102179210?s=96&v=4",
     bio: "Leading the club with passion for technology and innovation.",
     skills: ["Leadership", "Web Development", "Project Management","Graphics Designing"],
     social: {
@@ -19,7 +19,7 @@ const boardMembers = [
     },
   },
   {
-    name: "SANGOG PANDEY",
+    name: "SANJOG PANDEY",
     position: "Vice President",
     image: "/images/sangog-pandey.jpg",
     bio: "Coordinating events and fostering collaboration among members.",
@@ -31,9 +31,9 @@ const boardMembers = [
     },
   },
   {
-    name: "Ramat Neupane",
+    name: "RAMIT NEUPANE",
     position: "Secretary",
-    image: "/images/ramat-neupane.jpg",
+    image: "https://storage.tally.so/private/FD5BA672-63AF-4B2C-A887-F2AAE4F8DB36.jpeg?id=rELzz2&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InJFTHp6MiIsImZvcm1JZCI6Ind6UkVPRSIsImlhdCI6MTc0OTE3MDkzNX0.q1KSfNrGo0X7oU61qISdLC44yDzi6CykZBlZSb2RWfE&signature=c3d5bcef9ab99017807025d6188ef37b6abb20f7a553cebbdeaff8d2e8e8cb74",
     bio: "Documentation for the club.",
     skills: ["Documentation", "Communication", "Organization"],
     social: {
@@ -90,7 +90,7 @@ const boardMembers = [
     },
   },
   {
-    name: "Prazwal Roka",
+    name: "PRAZWAL ROKA",
     position: "Executive Member",
     image: "/images/prazwal-roka.jpg",
     bio: "Contributing to strategic planning and club operations.",
