@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="border-t border-white/10 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">© 2025 ICT Club of K.M.G.S.S. All rights reserved. | Est. 2079</p>
           <p className="text-gray-400 text-sm mt-2">
-            Made with <span className="text-red-500">♥</span> by NAYAN & NARAYAN 
+            Crafted with passion by NAYAN & NARAYAN
           </p>
         </div>
       </div>

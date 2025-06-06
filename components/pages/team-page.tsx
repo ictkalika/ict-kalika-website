@@ -12,16 +12,17 @@ const boardMembers = [
     position: "President",
     image: "/images/siddhant-panthi.jpg",
     bio: "Leading the club with passion for technology and innovation.",
-    skills: ["Leadership", "Web Development", "Project Management"],
+    skills: ["Leadership", "Web Development", "Project Management","Graphics Designing"],
     social: {
       linkedin: "https://linkedin.com/in/siddhantpanthi",
       github: "https://github.com/siddhantpanthi",
+      instagram: "https://instagram.com/siddu.psd",
     },
   },
   {
-    name: "SANGOG PANDEY",
+    name: "SANJOG PANDEY",
     position: "Vice President",
-    image: "/images/sangog-pandey.jpg",
+    image: "/images/sanjog-pandey.jpg",
     bio: "Coordinating events and fostering collaboration among members.",
     skills: ["Event Management", "UI/UX Design", "Team Building"],
     social: {
@@ -31,10 +32,10 @@ const boardMembers = [
     },
   },
   {
-    name: "Ramat Neupane",
+    name: "RAMIT NEUPANE",
     position: "Secretary",
-    image: "/images/ramat-neupane.jpg",
-    bio: "Managing communications and documentation for the club.",
+    image: "https://storage.tally.so/private/FD5BA672-63AF-4B2C-A887-F2AAE4F8DB36.jpeg?id=rELzz2&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InJFTHp6MiIsImZvcm1JZCI6Ind6UkVPRSIsImlhdCI6MTc0OTE3MDkzNX0.q1KSfNrGo0X7oU61qISdLC44yDzi6CykZBlZSb2RWfE&signature=c3d5bcef9ab99017807025d6188ef37b6abb20f7a553cebbdeaff8d2e8e8cb74",
+    bio: "Documentation for the club.",
     skills: ["Documentation", "Communication", "Organization"],
     social: {
       linkedin: "https://linkedin.com/in/ramatneupane",
@@ -67,7 +68,7 @@ const boardMembers = [
   },
   {
     name: "NARAYAN BHUSAL",
-    position: "IT Coordinator",
+    position: "IT Co-Lead",
     image: "/images/narayan-bhusal.jpg",
     bio: "Supporting technical initiatives and member development.",
     skills: ["Web Development", "Mentoring", "Project Coordination"],
@@ -79,7 +80,7 @@ const boardMembers = [
   },
   {
     name: "NISHAN REGMI",
-    position: "Media Head",
+    position: "Media",
     image:
       "https://storage.tally.so/private/inbound5447591931717511682.jpg?id=E0DyjB&accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkUwRHlqQiIsImZvcm1JZCI6Ind6UkVPRSIsImlhdCI6MTc0OTEyODA3NX0.2CTpAvwu_RXW9bSYkVgRcAbtM_YwzDSAoVn7n6u7FDw&signature=0f81f6034d38c3925c078457f14b42bf6c600c75b98d11e0b9eebf44a279df37",
     bio: "Managing club media presence and communications.",
@@ -90,7 +91,7 @@ const boardMembers = [
     },
   },
   {
-    name: "Prazwal Roka",
+    name: "PRAZWAL ROKA",
     position: "Executive Member",
     image: "/images/prazwal-roka.jpg",
     bio: "Contributing to strategic planning and club operations.",
@@ -132,7 +133,7 @@ const members = [
     },
   },
   {
-    name: "ICT KALIKA",
+    name: "ICT KALIKA", 
     position: "MEMBER",
     social: {
       linkedin: "https://linkedin.com/in/ictkalika",
@@ -142,12 +143,12 @@ const members = [
   },
 ]
 
-// Advisers
-const advisers = [
+// Advisors
+const Advisors = [
   {
     name: "Dinesh Thapa",
-    position: "Adviser",
-    image: "/placeholder.svg?height=150&width=150",
+    position: "Advisor",
+    image: "https://kalikaschoolbtl.edu.np/public/storage/profiles/February2023/U760qbJVMpmeAEL1PpMK.jpg",
     social: {
       linkedin: "",
       twitter: "",
@@ -155,8 +156,8 @@ const advisers = [
   },
   {
     name: "Arbind Kumar Dubey",
-    position: "Adviser",
-    image: "/placeholder.svg?height=150&width=150",
+    position: "Advisor",
+    image: "https://scontent.fkep3-1.fna.fbcdn.net/v/t1.6435-9/80609008_2556502627797679_3545427414731456512_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=rTOQW34e4eQQ7kNvwFitxSP&_nc_oc=AdktgjOHteoS5m_-WdsGu3KAdNfqn7IwvPlFD7HcHTV1qzZTtSu8-X-QW4NWBicrLMw&_nc_zt=23&_nc_ht=scontent.fkep3-1.fna&_nc_gid=u1J1CwPFySmD-qdZi6SKiA&oh=00_AfNgAYjfo96E60U0KcXi75hYht7-Ov4IRgxUeUouERYBbw&oe=6869FA03",
     social: {
       linkedin: "",
       github: "",
@@ -164,8 +165,8 @@ const advisers = [
   },
   {
     name: "Vishnu Neupane",
-    position: "Adviser",
-    image: "/placeholder.svg?height=150&width=150",
+    position: "Advisor",
+    image: "https://scontent.fkep3-1.fna.fbcdn.net/v/t39.30808-6/494478540_23908497598744229_4993761312091139037_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=vRTtHnk10s4Q7kNvwF3cidC&_nc_oc=Adm8lUuyIavj9plscNLGsoTzOYShgh6qB5PeaeJxKrOQMJFzwLQr9kw1IyQ7XjI3Ypk&_nc_zt=23&_nc_ht=scontent.fkep3-1.fna&_nc_gid=AZ3RRsTb__Ul01vWrSF5OA&oh=00_AfNDAXQmt5DxGAHx87LToXL9BNdGZHGbx7NxsuGZxOBZzg&oe=68484F1E",
     social: {
       linkedin: "",
       website: "",
@@ -327,7 +328,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Advisers Section */}
+      {/* Advisors Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <motion.h2
@@ -336,11 +337,11 @@ export default function TeamPage() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-5xl font-bold text-white text-center mb-16 glow-text"
           >
-            Advisers
+            Advisors
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {advisers.map((person, index) => (
+            {Advisors.map((person, index) => (
               <motion.div
                 key={person.name}
                 initial={{ opacity: 0, y: 30 }}
