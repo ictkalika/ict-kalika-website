@@ -10,9 +10,11 @@ import { usePathname } from "next/navigation"
 const navItems = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
+  { name: "Team", href: "/team" },
   { name: "Events", href: "/events" },
   { name: "FAQs", href: "/faqs" },
   { name: "Partners", href: "/partners" },
+
 ]
 
 export default function Navbar() {
@@ -38,7 +40,7 @@ export default function Navbar() {
                 className="animate-pulse-glow rounded-full"
               />
             </motion.div>
-            <span className="text-white font-bold text-lg glow-text">ICT Club</span>
+            <span className="text-white font-bold text-lg glow-text">ICT Club of Kalika</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -35,7 +35,7 @@ export default function ClientLayout({
   return (
     <html lang="en">
       <head>
-        <title>ICT Club of ICT Kalika</title>
+        <title>ICT Club of Kalika</title>
         <meta name="description" content="Innovate. Inspire. Impact." />
       </head>
       <body className={montserrat.className}>

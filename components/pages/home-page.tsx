@@ -12,6 +12,7 @@ const recentProjects = [
 const stats = [
   { icon: Users, label: "Active Members", value: "150+" },
   { icon: Calendar, label: "Events Held", value: "50+" },
+  { icon: Trophy, label: "Students Impacted", value: "500+" },
 ]
 
 export default function HomePage() {  
@@ -41,7 +42,7 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-5xl md:text-7xl font-bold text-white mb-6 glow-text"
           >
-            ICT Club of ICT Kalika
+            ICT Club of Kalika
           </motion.h1>
 
           <motion.p
