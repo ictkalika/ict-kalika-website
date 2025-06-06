@@ -16,6 +16,7 @@ const boardMembers = [
     social: {
       linkedin: "https://linkedin.com/in/siddhantpanthi",
       github: "https://github.com/siddhantpanthi",
+      instagram: "https://instagram.com/siddu.psd",
     },
   },
   {
