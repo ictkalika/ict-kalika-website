@@ -10,7 +10,7 @@ const boardMembers = [
   {
     name: "Siddhant Panthi",
     position: "President",
-    image: "https://avatars.githubusercontent.com/u/102179210?s=96&v=4",
+    image: "/images/siddhant-panthi.jpg",
     bio: "Leading the club with passion for technology and innovation.",
     skills: ["Leadership", "Web Development", "Project Management","Graphics Designing"],
     social: {
