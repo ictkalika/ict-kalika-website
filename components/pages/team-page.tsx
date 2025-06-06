@@ -21,7 +21,7 @@ const boardMembers = [
   {
     name: "SANJOG PANDEY",
     position: "Vice President",
-    image: "/images/sangog-pandey.jpg",
+    image: "/images/sanjog-pandey.jpg",
     bio: "Coordinating events and fostering collaboration among members.",
     skills: ["Event Management", "UI/UX Design", "Team Building"],
     social: {
