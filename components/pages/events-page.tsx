@@ -1,379 +1,228 @@
 "use client"
 
-import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { motion } from "framer-motion"
 import Image from "next/image"
-import { Calendar, MapPin, Users, X, ChevronLeft, ChevronRight } from "lucide-react"
-
-const slideshowImages = [
-  {
-    src: "/placeholder.svg?height=600&width=1200",
-    title: "Annual Tech Fest 2024",
-    description: "Our biggest event of the year featuring competitions, workshops, and tech exhibitions",
-  },
-  {
-    src: "/placeholder.svg?height=600&width=1200",
-    title: "AI Workshop Series",
-    description: "Comprehensive workshop series on artificial intelligence and machine learning",
-  },
-  {
-    src: "/placeholder.svg?height=600&width=1200",
-    title: "Coding Bootcamp",
-    description: "Intensive coding bootcamp for beginners and intermediate programmers",
-  },
-]
-
-const events = [
-  {
-    id: 1,
-    title: "Web Development Workshop",
-    date: "2024-02-15",
-    location: "Computer Lab A",
-    participants: 45,
-    image: "/placeholder.svg?height=300&width=400",
-    description: "Learn modern web development with React, Node.js, and MongoDB",
-    details:
-      "This comprehensive workshop covers the fundamentals of modern web development. Participants will learn to build full-stack applications using React for the frontend, Node.js for the backend, and MongoDB for database management.",
-    highlights: [
-      "Hands-on coding experience",
-      "Industry best practices",
-      "Project-based learning",
-      "Certificate of completion",
-    ],
-    gallery: [
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-    ],
-  },
-  {
-    id: 2,
-    title: "AI & Machine Learning Seminar",
-    date: "2024-02-20",
-    location: "Main Auditorium",
-    participants: 120,
-    image: "/placeholder.svg?height=300&width=400",
-    description: "Exploring the future of artificial intelligence and its applications",
-    details:
-      "Join us for an enlightening seminar on the latest developments in AI and ML. Industry experts will share insights on current trends, practical applications, and future possibilities in artificial intelligence.",
-    highlights: ["Expert speakers from industry", "Live demonstrations", "Q&A sessions", "Networking opportunities"],
-    gallery: [
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-    ],
-  },
-  {
-    id: 3,
-    title: "Coding Competition 2024",
-    date: "2024-02-25",
-    location: "Multiple Labs",
-    participants: 80,
-    image: "/placeholder.svg?height=300&width=400",
-    description: "Annual programming contest with exciting prizes and challenges",
-    details:
-      "Test your programming skills in our annual coding competition. Participants will face challenging algorithmic problems and compete for exciting prizes while showcasing their problem-solving abilities.",
-    highlights: [
-      "Cash prizes for winners",
-      "Multiple difficulty levels",
-      "Team and individual categories",
-      "Recognition certificates",
-    ],
-    gallery: [
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-    ],
-  },
-  {
-    id: 4,
-    title: "Cybersecurity Workshop",
-    date: "2024-03-05",
-    location: "Security Lab",
-    participants: 35,
-    image: "/placeholder.svg?height=300&width=400",
-    description: "Learn about cybersecurity fundamentals and ethical hacking",
-    details:
-      "Discover the world of cybersecurity through hands-on exercises and real-world scenarios. Learn about network security, ethical hacking techniques, and how to protect digital assets.",
-    highlights: [
-      "Ethical hacking demonstrations",
-      "Security tools training",
-      "Real-world case studies",
-      "Career guidance",
-    ],
-    gallery: [
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-      "/placeholder.svg?height=200&width=300",
-    ],
-  },
-]
+import { Calendar, Clock, MapPin, Users, Wrench, Hammer, Settings } from "lucide-react"
 
 export default function EventsPage() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(null)
-  const [currentGalleryImage, setCurrentGalleryImage] = useState(0)
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slideshowImages.length)
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slideshowImages.length) % slideshowImages.length)
-  }
-
-  const nextGalleryImage = () => {
-    if (selectedEvent) {
-      setCurrentGalleryImage((prev) => (prev + 1) % selectedEvent.gallery.length)
-    }
-  }
-
-  const prevGalleryImage = () => {
-    if (selectedEvent) {
-      setCurrentGalleryImage((prev) => (prev - 1 + selectedEvent.gallery.length) % selectedEvent.gallery.length)
-    }
-  }
-
   return (
     <div className="pt-16">
-      {/* Slideshow Section */}
-      <section className="relative h-screen overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.8 }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={slideshowImages[currentSlide].src || "/placeholder.svg"}
-              alt={slideshowImages[currentSlide].title}
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-          </motion.div>
-        </AnimatePresence>
-
-        {/* Slideshow Controls */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 glow-button"
-        >
-          <ChevronLeft size={24} />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full transition-all duration-300 glow-button"
-        >
-          <ChevronRight size={24} />
-        </button>
-
-        {/* Slideshow Content */}
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
-          <motion.div
-            key={currentSlide}
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-4xl"
-          >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 glow-text">
-              {slideshowImages[currentSlide].title}
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl">{slideshowImages[currentSlide].description}</p>
-          </motion.div>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-          {slideshowImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? "bg-[#9bd3ff] glow-border" : "bg-white/30"
-                }`}
-            />
-          ))}
-        </div>
-      </section>
-
-      {/* Events Carousel Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-7xl mx-auto">
+      {/* Under Construction Section */}
+      <section className="min-h-screen flex items-center justify-center px-4">
+        <div className="text-center max-w-4xl mx-auto">
+          {/* Animated Construction Icons */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="mb-12 relative"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 glow-text">Upcoming Events</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Join us for exciting events, workshops, and competitions throughout the year
+            <motion.div
+              animate={{
+                rotate: [0, 10, -10, 0],
+              }}
+              transition={{
+                duration: 2,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+              }}
+              className="inline-block"
+            >
+              <Wrench className="w-20 h-20 text-[#5bbcff] mx-auto mb-4" />
+            </motion.div>
+
+            {/* Floating construction elements */}
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 5, -5, 0],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+                delay: 0.5,
+              }}
+              className="absolute top-0 left-1/4"
+            >
+              <Hammer className="w-12 h-12 text-[#9bd3ff] opacity-60" />
+            </motion.div>
+
+            <motion.div
+              animate={{
+                y: [0, 10, 0],
+                rotate: [0, -5, 5, 0],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Number.POSITIVE_INFINITY,
+                ease: "easeInOut",
+                delay: 1,
+              }}
+              className="absolute top-0 right-1/4"
+            >
+              <Settings className="w-14 h-14 text-[#5bbcff] opacity-40" />
+            </motion.div>
+          </motion.div>
+
+          {/* ICT Club Logo */}
+          <motion.div
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mb-8"
+          >
+            <Image
+              src="/logo.png"
+              alt="ICT Club Logo"
+              width={120}
+              height={120}
+              className="mx-auto glow-border rounded-full"
+            />
+          </motion.div>
+
+          {/* Main Heading */}
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-5xl md:text-7xl font-bold text-white mb-6 glow-text"
+          >
+            Under Construction
+          </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            className="text-xl md:text-2xl text-[#9bd3ff] mb-8 font-light"
+          >
+            We're building something amazing!
+          </motion.p>
+
+          {/* Description */}
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
+            className="text-lg text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed"
+          >
+            <p className="mb-4">
+              Our events page is currently being developed to bring you the best experience for discovering and
+              participating in ICT Club activities.
+            </p>
+            <p>
+              Soon you'll be able to explore upcoming workshops, competitions, seminars, and networking events all in
+              one place.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {events.map((event, index) => (
+          {/* Coming Soon Features */}
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1.1 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+          >
+            {[
+              { icon: Calendar, label: "Event Calendar", description: "Interactive calendar view" },
+              { icon: Clock, label: "Live Updates", description: "Real-time event information" },
+              { icon: MapPin, label: "Event Locations", description: "Detailed venue information" },
+              { icon: Users, label: "Registration", description: "Easy event sign-up" },
+            ].map((feature, index) => (
               <motion.div
-                key={event.id}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="card-glow rounded-xl overflow-hidden cursor-pointer transition-all duration-300 group"
-                onClick={() => {
-                  setSelectedEvent(event)
-                  setCurrentGalleryImage(0)
-                }}
-                whileHover={{ scale: 1.02 }}
+                key={feature.label}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 1.3 + index * 0.1 }}
+                className="card-glow rounded-xl p-6 text-center"
               >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={event.image || "/placeholder.svg"}
-                    alt={event.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-3">{event.title}</h3>
-                  <p className="text-gray-300 text-sm mb-4 line-clamp-2">{event.description}</p>
-
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center text-[#9bd3ff]">
-                      <Calendar size={16} className="mr-2" />
-                      {new Date(event.date).toLocaleDateString()}
-                    </div>
-                    <div className="flex items-center text-[#9bd3ff]">
-                      <MapPin size={16} className="mr-2" />
-                      {event.location}
-                    </div>
-                    <div className="flex items-center text-[#9bd3ff]">
-                      <Users size={16} className="mr-2" />
-                      {event.participants} participants
-                    </div>
-                  </div>
-                </div>
+                <feature.icon className="w-8 h-8 text-[#5bbcff] mx-auto mb-3" />
+                <h3 className="text-white font-semibold mb-2">{feature.label}</h3>
+                <p className="text-gray-400 text-sm">{feature.description}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
+          </motion.div>
 
-      {/* Event Detail Modal */}
-      <AnimatePresence>
-        {selectedEvent && (
+          {/* Progress Bar */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.5 }}
+            className="mb-8"
+          >
+            <div className="text-center mb-4">
+              <span className="text-[#9bd3ff] font-semibold">Development Progress</span>
+            </div>
+            <div className="w-full max-w-md mx-auto bg-white/20 rounded-full h-3 relative overflow-hidden">
+              <motion.div
+                className="bg-gradient-to-r from-[#5bbcff] to-[#9bd3ff] h-3 rounded-full glow-border"
+                initial={{ width: 0 }}
+                animate={{ width: "65%" }}
+                transition={{ duration: 2, delay: 1.7, ease: "easeOut" }}
+              >
+                {/* Animated shine effect */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                  animate={{
+                    x: ["-100%", "100%"],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "easeInOut",
+                    delay: 3,
+                  }}
+                />
+              </motion.div>
+            </div>
+            <div className="text-center mt-2">
+              <span className="text-gray-400 text-sm">65% Complete</span>
+            </div>
+          </motion.div>
+
+          {/* Call to Action */}
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, delay: 1.7 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+          >
+            <a
+              href="/about"
+              className="bg-[#5bbcff] hover:bg-[#4aa3e6] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 glow-button"
+            >
+              Learn About Us
+            </a>
+            <a
+              href="mailto:ictkalika82@gmail.com?subject=Events Page Inquiry"
+              className="border-2 border-[#9bd3ff] text-[#9bd3ff] hover:bg-[#9bd3ff] hover:text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 glow-button"
+            >
+              Get Notified
+            </a>
+          </motion.div>
+
+          {/* Expected Launch */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-            onClick={() => setSelectedEvent(null)}
+            transition={{ duration: 0.8, delay: 2 }}
+            className="mt-12 text-center"
           >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              className="card-glow rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={() => setSelectedEvent(null)}
-                className="absolute top-4 right-4 z-10 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors duration-300"
-              >
-                <X size={20} />
-              </button>
-
-              <div className="p-8">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {/* Event Details */}
-                  <div>
-                    <h2 className="text-3xl font-bold text-white mb-4 glow-text">{selectedEvent.title}</h2>
-
-                    <div className="space-y-3 mb-6">
-                      <div className="flex items-center text-[#9bd3ff]">
-                        <Calendar size={18} className="mr-3" />
-                        {new Date(selectedEvent.date).toLocaleDateString()}
-                      </div>
-                      <div className="flex items-center text-[#9bd3ff]">
-                        <MapPin size={18} className="mr-3" />
-                        {selectedEvent.location}
-                      </div>
-                      <div className="flex items-center text-[#9bd3ff]">
-                        <Users size={18} className="mr-3" />
-                        {selectedEvent.participants} participants
-                      </div>
-                    </div>
-
-                    <p className="text-gray-300 mb-6 leading-relaxed">{selectedEvent.details}</p>
-
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-3">Key Highlights</h3>
-                      <ul className="space-y-2">
-                        {selectedEvent.highlights.map((highlight, index) => (
-                          <li key={index} className="text-gray-300 flex items-start">
-                            <span className="text-[#9bd3ff] mr-2">•</span>
-                            {highlight}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  {/* Image Gallery */}
-                  <div>
-                    <h3 className="text-xl font-bold text-white mb-4">Event Gallery</h3>
-                    <div className="relative">
-                      <Image
-                        src={selectedEvent.gallery[currentGalleryImage] || "/placeholder.svg"}
-                        alt={`${selectedEvent.title} gallery ${currentGalleryImage + 1}`}
-                        width={400}
-                        height={300}
-                        className="w-full h-64 object-cover rounded-lg glow-border"
-                      />
-
-                      {selectedEvent.gallery.length > 1 && (
-                        <>
-                          <button
-                            onClick={prevGalleryImage}
-                            className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors duration-300"
-                          >
-                            <ChevronLeft size={16} />
-                          </button>
-                          <button
-                            onClick={nextGalleryImage}
-                            className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-colors duration-300"
-                          >
-                            <ChevronRight size={16} />
-                          </button>
-                        </>
-                      )}
-                    </div>
-
-                    {selectedEvent.gallery.length > 1 && (
-                      <div className="flex justify-center mt-4 space-x-2">
-                        {selectedEvent.gallery.map((_, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setCurrentGalleryImage(index)}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentGalleryImage ? "bg-[#9bd3ff]" : "bg-white/30"
-                              }`}
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            <p className="text-gray-400 text-sm">
+              Expected launch: <span className="text-[#9bd3ff] font-semibold">Coming Soon</span>
+            </p>
           </motion.div>
-        )}
-      </AnimatePresence>
+        </div>
+      </section>
+
+      {/* Background Elements */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute top-1/4 left-10 w-32 h-32 bg-[#5bbcff]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-[#9bd3ff]/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-[#5bbcff]/5 rounded-full blur-3xl"></div>
+      </div>
     </div>
   )
 }
