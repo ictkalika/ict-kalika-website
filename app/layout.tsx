@@ -13,8 +13,12 @@ export const metadata = {
   title: 'ICT Club of Kalika',
   description: 'Innovating the future through technology. Join us in our mission to inspire and impact the world through ICT.',
   keywords: 'ICT Club, Kalika, Technology, Innovation, Education, Nepal',
-  authors: [{ name: 'Nayan & Narayan'}],
+  
+  authors: [{ name: 'Nayan Acharya & Narayan'}],
   metadataBase: new URL('https://ictkalika.tech'),
+  other: {
+    'google-adsense-account': 'ca-pub-7528456570041321',
+  },
   openGraph: {
     title: 'ICT Club of Kalika',
     description: 'Innovating the future through technology. Join us in our mission to inspire and impact the world through ICT.',
