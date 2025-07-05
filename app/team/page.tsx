@@ -4,7 +4,7 @@ import { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Our Team - ICT Club of Kalika",
   description: "Meet the passionate team members of ICT Club of Kalika, led by talented individuals driving innovation and excellence in technology.",
-  keywords: "ICT Club team, Nayan Acharya, Kalika team members, technology leaders, Nepal ICT",
+  keywords: "ICT Kalika team,ICT KALIKA, ICT CLUB OF KALIKA,  Nayan Acharya, Kalika team members, technology leaders, Nepal ICT",
   other: {
     'structured-data': JSON.stringify({
       "@context": "https://schema.org",
