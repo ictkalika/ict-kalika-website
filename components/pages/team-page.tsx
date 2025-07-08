@@ -56,7 +56,7 @@ const boardMembers = [
   },
   {
     name: "NAYAN ACHARYA",
-    position: "IT Lead",
+    position: "IT Head",
     image: "/images/nayan-acharya.jpg",
     bio: "Overseeing technical projects and infrastructure.",
     skills: ["System Administration", "DevOps", "Technical Leadership"],
@@ -68,7 +68,7 @@ const boardMembers = [
   },
   {
     name: "NARAYAN BHUSAL",
-    position: "IT Co-Lead",
+    position: "IT Officer",
     image: "/images/narayan-bhusal.jpg",
     bio: "Supporting technical initiatives and member development.",
     skills: ["Web Development", "Mentoring", "Project Coordination"],
@@ -106,40 +106,22 @@ const boardMembers = [
 // Regular Members (names and socials only)
 const members = [
   {
-    name: "ICT KALIKA",
+    name: "NAYAN ACHARYA",
     position: "MEMBER",
-    social: {
-      linkedin: "https://linkedin.com/in/ictkalika",
-      instagram: "https://instagram.com/ictkalika",
-      twitter: "https://twitter.com/ictkalika",
-    },
   },
   {
-    name: "ICT KALIKA",
+    name: "NAYAN ACHARYA",
     position: "MEMBER",
-    social: {
-      linkedin: "https://linkedin.com/in/ictkalika",
-      instagram: "https://instagram.com/ictkalika",
-      twitter: "https://twitter.com/ictkalika",
-    },
+  
   },
   {
-    name: "ICT KALIKA",
+    name: "Nayan Acharya",
     position: "MEMBER",
-    social: {
-      linkedin: "https://linkedin.com/in/ictkalika",
-      instagram: "https://instagram.com/ictkalika",
-      twitter: "https://twitter.com/ictkalika",
-    },
+  
   },
   {
-    name: "ICT KALIKA", 
+    name: "Nayan Acharya", 
     position: "MEMBER",
-    social: {
-      linkedin: "https://linkedin.com/in/ictkalika",
-      instagram: "https://instagram.com/ictkalika",
-      twitter: "https://twitter.com/ictkalika",
-    },
   },
 ]
 
@@ -309,19 +291,7 @@ export default function TeamPage() {
                 <h3 className="text-lg font-bold text-white mb-1 uppercase">{member.name}</h3>
                 <p className="text-[#9bd3ff] text-sm font-medium mb-4">{member.position}</p>
 
-                <div className="flex justify-center space-x-3">
-                  {Object.entries(member.social).map(([platform, url]) => (
-                    <a
-                      key={platform}
-                      href={platform === "email" ? `mailto:${url}` : url}
-                      target={platform === "email" ? undefined : "_blank"}
-                      rel={platform === "email" ? undefined : "noopener noreferrer"}
-                      className="transition-colors duration-300 hover:scale-110"
-                    >
-                      {getSocialIcon(platform, url)}
-                    </a>
-                  ))}
-                </div>
+               
               </motion.div>
             ))}
           </div>
