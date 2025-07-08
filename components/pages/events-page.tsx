@@ -30,7 +30,7 @@ const events = [
   {
     id: 1,
     title: "INSTALLATION CEREMONY",
-    date: "2025-07-08",
+    date: "2025-07-27",
     location: "LOC",
     participants: 100,
     image: "images/ictkalika-logo.png",
@@ -50,7 +50,7 @@ const events = [
   {
     id: 2,
     title: "INSTALLATION CEREMONY",
-    date: "2025-07-08",
+    date: "2025-07-27",
     location: "LOC",
     participants: 100,
     image: "images/ictkalika-logo.png",
