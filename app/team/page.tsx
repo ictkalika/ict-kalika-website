@@ -10,8 +10,8 @@ export const metadata: Metadata = {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "NAYAN ACHARYA",
-      "jobTitle": "IT Lead",
-      "description": "IT Lead at ICT Club of Kalika, overseeing technical projects and infrastructure with expertise in System Administration, DevOps, and Technical Leadership.",
+      "jobTitle": "IT Head",
+      "description": "IT Head at ICT Club of Kalika, overseeing technical projects and infrastructure with expertise in System Administration, DevOps, and Technical Leadership.",
       "affiliation": {
         "@type": "Organization",
         "name": "ICT CLUB OF KALIKA",
