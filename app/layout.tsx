@@ -10,23 +10,53 @@ export const viewport = {
 }
 
 export const metadata = {
-  title: 'ICT Club of Kalika',
-  description: 'Innovating the future through technology. Join us in our mission to inspire and impact the world through ICT.',
-  keywords: 'ICT Club, Kalika, Technology, Innovation, Education, Nepal',
+  title: {
+    default: 'ICT Club of Kalika - Student led IT Club',
+    template: '%s | ICT Club of Kalika'
+  },
+  description: 'Innovate • Educate • Inspire. Founded in 2022 at Kalika Manavgyan Secondary School, ICT Club of Kalika is a vibrant community of students passionate about technology. We empower youth through hands-on workshops, tech projects, and collaborative events—promoting digital literacy, coding, robotics, and ICT innovations.',
+  keywords: [
+    'ICT Club Kalika',
+    'Kalika Manavgyan Secondary School',
+    'Student Technology Club',
+    'Digital Literacy Nepal',
+    'Coding Workshop',
+    'Robotics Club',
+    'Programming Community',
+    'Tech Projects Nepal',
+    'Student ICT Innovation',
+    'Technology Education',
+    'Youth Tech Community',
+    'School Technology Club',
+    'Nepal ICT',
+    'Tech Events Nepal',
+    'Coding Community'
+  ].join(', '),
   
-  authors: [{ name: 'Nayan Acharya & Narayan'}],
+  authors: [{ name: 'ICT Club of Kalika', url: 'https://ictkalika.tech' }],
+  creator: 'ICT Club of Kalika',
+  publisher: 'ICT Club of Kalika',
   metadataBase: new URL('https://ictkalika.tech'),
+  alternates: {
+    canonical: 'https://ictkalika.tech',
+  },
   other: {
-    'google-adsense-account': 'ca-pub-7528456570041321',
+   
   },
   openGraph: {
-    title: 'ICT Club of Kalika',
-    description: 'Innovating the future through technology. Join us in our mission to inspire and impact the world through ICT.',
+    title: 'ICT Club of Kalika - Student led IT Club',
+    description: 'Founded in 2022 at Kalika Manavgyan Secondary School, ICT Club of Kalika is a vibrant community of students passionate about technology. We empower youth through hands-on workshops, tech projects, and collaborative events—promoting digital literacy, coding, robotics, and ICT innovations.',
     url: 'https://ictkalika.tech',
     siteName: 'ICT Club of Kalika',
     images: [
       {
-        url: '/logo.png',
+        url: '/images/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'ICT Club of Kalika - Student led IT Club',
+      },
+      {
+        url: '/images/logo.png',
         width: 800,
         height: 600,
         alt: 'ICT Club of Kalika Logo',
@@ -37,29 +67,36 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ICT Club of Kalika',
-    description: 'Innovating the future through technology. Join us in our mission to inspire and impact the world through ICT.',
-    images: ['/logo.png'],
+    title: 'ICT Club of Kalika - Student led IT Club',
+    description: 'Founded in 2022 at Kalika Manavgyan Secondary School, ICT Club of Kalika is a vibrant community of students passionate about technology promoting digital literacy, coding, robotics, and ICT innovations.',
+    images: ['/images/logo.png'],
+    creator: '@ictkalika',
   },
   icons: {
     icon: [
-      { url: '/logo.png', type: 'image/png' },
-      { url: '/logo.png', sizes: '16x16', type: 'image/png' },
-      { url: '/logo.png', sizes: '32x32', type: 'image/png' },
-      { url: '/logo.png', sizes: '192x192', type: 'image/png' },
-      { url: '/logo.png', sizes: '512x512', type: 'image/png' },
+      { url: '/images/logo.png', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '16x16', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '192x192', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '512x512', type: 'image/png' },
     ],
-    apple: { url: '/logo.png', type: 'image/png' },
-    shortcut: { url: '/logo.png', type: 'image/png' },
+    apple: { url: '/images/logo.png', type: 'image/png' },
+    shortcut: { url: '/images/logo.png', type: 'image/png' },
   },
  
   robots: {
     index: true,
     follow: true,
-    noarchive: true,
-    nosnippet: false,
-    noimageindex: false,
-    noindex: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+   
   },
 };
 
