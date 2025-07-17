@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Important pages for crawling
+Allow: /about
+Allow: /team
+Allow: /events
+Allow: /partners
+Allow: /faqs
+
+# Sitemap location
+Sitemap: https://ictkalika.tech/sitemap.xml
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1
+
+# Block specific crawlers if needed (uncomment if necessary)
+# User-agent: BadBot
+# Disallow: /
