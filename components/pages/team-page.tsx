@@ -63,7 +63,7 @@ const boardMembers = [
     social: {
       linkedin: "https://linkedin.com/in/nayan135",
       twitter: "https://twitter.com/nooneknows135",
-      email: "nayan@nayanacharya.xyz",
+      email: "nayan@ypstem.org",
     },
   },
   {

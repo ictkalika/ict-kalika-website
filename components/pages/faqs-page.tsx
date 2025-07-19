@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "How can I join the ICT Club?",
     answer:
-      "You can join the ICT Club by attending our orientation sessions held at the beginning of each semester. Simply fill out the membership form and participate in our introductory activities. We welcome students from all backgrounds who are passionate about technology.",
+      "You can join the ICT Club by attending our orientation sessions held at the beginning of each semester. Simply fill out the membership form at membership.ictkalika.tech and participate in our activities. We welcome students from all backgrounds who are passionate about technology.",
   },
   {
     question: "What activities does the club organize?",
