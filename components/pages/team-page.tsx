@@ -127,7 +127,7 @@ const boardMembers = [
 
   {
   name: "Raunak Acharya",
-  position: "Old Member",
+  position: "Executive Member",
   image: "/images/raunak-acharya.jpg",
   bio: `Contributing to strategic planning and club operations`,
   skills: [
