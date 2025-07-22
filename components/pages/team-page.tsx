@@ -272,6 +272,62 @@ const boardMembers = [
   },
 },
 
+{
+  name: "Sumit Kawar Magar",
+  position: "Executive Member",
+  image: "/images/sumit-kawar-magar.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    instagram: "https://www.instagram.com/aridorikichi/profilecard/?igsh=cWtwbjBreGNhZHE0",
+    email: "aridorikichi@gmail.com"
+  },
+},
+
+{
+  name: "Aman Pokharel",
+  position: "Executive Member",
+  image: "/images/aman-pokharel.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    linkedin: "https://www.linkedin.com/in/aman-pokharel-59b146287/",
+    email: "amanpokharel69@gmail.com"
+  },
+},
+
+{
+  name: "Anshu Aryal",
+  position: "Executive Member",
+  image: "/images/anshu-aryal.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+   instagram: "https://www.instagram.com/anshuaryal15?igsh=MWgwZnpkNnR3dWF1cw==",
+    email: "aryalanshu64@gmail.com"
+  },
+},
+
+{
+  name: "Susant Gautam",
+  position: "Executive Member",
+  image: "/images/susant-gautam.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+   linkedin: "https://www.linkedin.com/in/sushant-gautam-705144314?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "sushantgautam854@gmail.com"
+  },
+},
+
 ]
 
 // Regular Members (names only)
