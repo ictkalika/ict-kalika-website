@@ -563,6 +563,7 @@ const members = [
     name: "Danish Chidi",
     position: "MEMBER",
   },
+  
 ];
 
 // Advisors
