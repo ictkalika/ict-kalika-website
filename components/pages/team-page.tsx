@@ -141,19 +141,6 @@ const boardMembers = [
   },
 
   {
-<<<<<<< HEAD
-  name: "Raunak Acharya",
-  position: "Executive Member",
-  image: "/images/raunak-acharya.jpg",
-  bio: `Contributing to strategic planning and club operations`,
-  skills: [
-    "Frontend Development",
-    "UI/UX Designing"
-  ],
-  social: {
-    facebook: "https://www.facebook.com/share/18xxwiHzee/",
-    email: "raunakacharya0@gmail.com"
-=======
     name: "Raunak Acharya",
     position: "Old Member",
     image: "/images/raunak-acharya.jpg",
@@ -163,7 +150,6 @@ const boardMembers = [
       facebook: "https://www.facebook.com/share/18xxwiHzee/",
       email: "raunakacharya0@gmail.com",
     },
->>>>>>> ba72759fd3dde23c1ea7769c5cadf99fdebb41da
   },
 ];
 
