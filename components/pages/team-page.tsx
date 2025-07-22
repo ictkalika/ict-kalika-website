@@ -190,7 +190,7 @@ const boardMembers = [
 
   {
   name: "Raunak Acharya",
-  position: " Member",
+  position: "Executive Member",
   image: "/images/raunak-acharya.jpg",
   bio: `Contributing to strategic planning and club operations`,
   skills: [
@@ -218,7 +218,7 @@ const boardMembers = [
 
   {
   name: "Nischal Darnal",
-  position: "Exe Member",
+  position: "Executive Member",
   image: "/images/nischal-darnal.jpg",
   bio: `Contributing to strategic planning and club operations`,
   skills: [
