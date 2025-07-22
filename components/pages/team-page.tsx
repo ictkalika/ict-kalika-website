@@ -118,7 +118,7 @@ const boardMembers = [
     position: "Executive Member",
     image: "/images/amit-pandey.jpg",
     bio: "Contributing to strategic planning and club operations.",
-    skills: ["Strategy", "Operations", "Member Engagement"],
+    skills: ["Strategy", "Operations", "Engagement"],
     social: {
       facebook: "https://www.facebook.com/amit.pandey.922255",
       email: "pandeyamit2064@gmail.com",
