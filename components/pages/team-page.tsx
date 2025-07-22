@@ -155,7 +155,7 @@ const boardMembers = [
 
   {
     name: "Samriddha poudel",
-    position: "Leader Of 10",
+    position: "Leader Of 9",
     image: "/images/samriddha-poudel.jpg",
     bio: "Engaging team with various events throughout the club.",
     skills: ["Leadership", "Communication", "Management"],
