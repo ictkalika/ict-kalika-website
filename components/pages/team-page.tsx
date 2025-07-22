@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { useState } from "react"
-import { X, Linkedin, Github, Twitter, Instagram, ExternalLink, Mail } from "lucide-react"
+import { X, Linkedin, Github, Twitter, Instagram, Facebook ,ExternalLink, Mail } from "lucide-react"
 
 // Board of Directors (with images)
 const boardMembers = [
@@ -97,8 +97,8 @@ const boardMembers = [
     bio: "Contributing to strategic planning and club operations.",
     skills: ["Strategy", "Operations", "Member Engagement"],
     social: {
-      linkedin: "https://linkedin.com/in/prazwalroka",
-      email: "prazwalroka@gmail.com",
+      linkedin: "https://www.linkedin.com/in/bishnu-adhikari-8bb6242a5/",
+      email: "yamadeath0@gmail.com",
     },
   },
   
@@ -113,10 +113,37 @@ const boardMembers = [
       email: "prazwalroka@gmail.com",
     },
   },
+     {
+    name: "Amit Pandey",
+    position: "Executive Member",
+    image: "/images/amit-pandey.jpg",
+    bio: "Contributing to strategic planning and club operations.",
+    skills: ["Strategy", "Operations", "Member Engagement"],
+    social: {
+      facebook: "https://www.facebook.com/amit.pandey.922255",
+      email: "pandeyamit2064@gmail.com",
+    },
+  },
+
+  {
+  name: "Raunak Acharya",
+  position: "Old Member",
+  image: "/images/raunak-acharya.jpg",
+  bio: ``,
+  skills: [
+    "Frontend Development",
+    "UI/UX Designing"
+  ],
+  social: {
+    facebook: "https://www.facebook.com/share/18xxwiHzee/",
+    email: "raunakacharya0@gmail.com"
+  },
+}
+
   
 ]
 
-// Regular Members (names and socials only)
+// Regular Members (names only)
 const members = [
   {
     name: "NAYAN ACHARYA",
