@@ -189,7 +189,6 @@ const boardMembers = [
   },
 
   {
-<<<<<<< HEAD
   name: "Raunak Acharya",
   position: "Old Member",
   image: "/images/raunak-acharya.jpg",
@@ -274,19 +273,6 @@ const boardMembers = [
 },
 
 ]
-=======
-    name: "Raunak Acharya",
-    position: "Old Member",
-    image: "/images/raunak-acharya.jpg",
-    bio: `Contributing to strategic planning and club operations`,
-    skills: ["Frontend Development", "UI/UX Designing"],
-    social: {
-      facebook: "https://www.facebook.com/share/18xxwiHzee/",
-      email: "raunakacharya0@gmail.com",
-    },
-  },
-];
->>>>>>> 05cc91402210a139f667c516d6ebe59e0a52f6dd
 
 // Regular Members (names only)
 const members = [
