@@ -93,7 +93,7 @@ const boardMembers = [
   {
     name: "Bishnu Adhikari",
     position: "Head of Executive",
-    image: "/images/prazwal-roka.jpg",
+    image: "/images/bishnu-adhikari.jpg",
     bio: "Contributing to strategic planning and club operations.",
     skills: ["Strategy", "Operations", "Member Engagement"],
     social: {
