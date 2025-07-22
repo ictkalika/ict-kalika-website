@@ -103,11 +103,59 @@ const boardMembers = [
   },
   
    {
+    name: "Sweta lamsal",
+    position: "Joint Secretary",
+    image: "/images/sweta-lamsal.jpg",
+    bio: "Contributing to strategic planning and club operations.",
+    skills: ["Communication", "Organization", "Event Planning"],
+    social: {
+      facebook: "https://www.facebook.com/swe.ta.119000",
+      email: "swetadonna@gmail.com",
+    },
+  },
+
+   {
+    name: "Aaditya Khanal",
+    position: "Leader Of 11",
+    image: "/images/aaditya-khanal.jpg",
+    bio: "Engaging team with various events throughout the club.",
+    skills: ["Leadership", "Communication", "Management"],
+    social: {
+      facebook: "https://www.facebook.com/aaditya.khanal.7999",
+      email: "khanalaaditya27@gmail.com",
+    },
+  },
+
+  {
+    name: "Himanshu Sapkota",
+    position: "Leader Of 10",
+    image: "/images/himanshu-sapkota.jpg",
+    bio: "Engaging team with various events throughout the club.",
+    skills: ["Leadership", "Communication", "Management"],
+    social: {
+      linkedin: "https://www.linkedin.com/in/himanshu-sapkota-3b5488339?originalSubdomain=np",
+      email: "himanshuspkt@gmail.com",
+    },
+  },
+
+  {
+    name: "Samriddha poudel",
+    position: "Leader Of 10",
+    image: "/images/samriddha-poudel.jpg",
+    bio: "Engaging team with various events throughout the club.",
+    skills: ["Leadership", "Communication", "Management"],
+    social: {
+      facebook: "https://www.facebook.com/samriddha.poudel.869291",
+      email: "poudelsamriddha46@gmail.com",
+    },
+  },
+
+   {
     name: "PRAZWAL ROKA",
     position: "Executive Member",
     image: "/images/prazwal-roka.jpg",
     bio: "Contributing to strategic planning and club operations.",
-    skills: ["Strategy", "Operations", "Member Engagement"],
+    skills: ["Strategy", "Operations", "Engagement"],
     social: {
       linkedin: "https://linkedin.com/in/prazwalroka",
       email: "prazwalroka@gmail.com",
@@ -131,16 +179,84 @@ const boardMembers = [
   image: "/images/raunak-acharya.jpg",
   bio: `Contributing to strategic planning and club operations`,
   skills: [
-    "Frontend Development",
-    "UI/UX Designing"
+    "Strategy", "Operations", "Engagement"
   ],
   social: {
     facebook: "https://www.facebook.com/share/18xxwiHzee/",
     email: "raunakacharya0@gmail.com"
   },
-}
+},
 
+  {
+  name: "Aman Pokharel",
+  position: "Executive Member",
+  image: "/images/aman-pokharel.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+   "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    linkedin: "https://www.linkedin.com/in/aman-pokharel-59b146287/",
+    email: "amanpokharel69@gmail.com"
+  },
+},
+
+  {
+  name: "Nischal Darnal",
+  position: "Exe Member",
+  image: "/images/nischal-darnal.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    facebook: "https://www.facebook.com/share/1LeiXMA3Zb/",
+    email: "nischaldarnal69@gmail.com"
+  },
+},
   
+  {
+  name: "Anushka Pokhrel",
+  position: "Executive Member",
+  image: "/images/anushka-pokhrel.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    facebook: "https://www.facebook.com/anushka.pokhrel.871838/",
+    email: "shovasasa0@gmail.com"
+  },
+},
+
+{
+  name: "Rabin Chudali",
+  position: "Executive Member",
+  image: "/images/rabin-chudali.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    linkedin: "https://www.linkedin.com/in/rabin-chudali-9600b934b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    email: "rabinchudali07@gmail.com"
+  },
+},
+
+{
+  name: "Girija Karki",
+  position: "Executive Member",
+  image: "/images/girija-karki.jpg",
+  bio: `Contributing to strategic planning and club operations`,
+  skills: [
+    "Strategy", "Operations", "Engagement"
+  ],
+  social: {
+    instagram: "https://www.instagram.com/_sanjokkarki?igsh=MXhmbmQxZno3eWFjaA==",
+    email: "karkisanjok06@gmail.com"
+  },
+},
+
 ]
 
 // Regular Members (names only)
