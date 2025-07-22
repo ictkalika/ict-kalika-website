@@ -557,7 +557,7 @@ const members = [
     position: "MEMBER",
   },
   {
-    name: "Danish Chidi",
+    name: "Danish Zehen",
     position: "MEMBER",
   },
   
