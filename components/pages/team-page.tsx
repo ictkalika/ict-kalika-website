@@ -67,6 +67,7 @@ const boardMembers = [
     social: {
       linkedin: "https://linkedin.com/in/shasankshrestha",
       email: "shasankshrestha59@gmail.com",
+      github:"https://github.com/shasank00",
     },
   },
   {
@@ -374,10 +375,6 @@ const members = [
   },
   {
     name: "Aayush Kalwar",
-    position: "MEMBER",
-  },
-  {
-    name: "Sajal Shrestha",
     position: "MEMBER",
   },
   {
