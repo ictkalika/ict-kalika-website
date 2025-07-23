@@ -504,7 +504,7 @@ const members = [
     position: "MEMBER",
   },
     {
-    name: "Sijan Poudel", 
+    name: "Sijan Poudel"}, 
 =======
     name: "Abhay Mishra",
 >>>>>>> 98a1ec9c5bf25bd7cabc0ded8a91105a4a329aee
