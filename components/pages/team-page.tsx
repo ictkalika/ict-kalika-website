@@ -67,6 +67,7 @@ const boardMembers = [
     social: {
       linkedin: "https://linkedin.com/in/shasankshrestha",
       email: "shasankshrestha59@gmail.com",
+      github:"https://github.com/shasank00",
     },
   },
   {
@@ -334,7 +335,6 @@ const boardMembers = [
 const members = [
   
   {
-<<<<<<< HEAD
     name: "Khusi Nisa Banu",
     position: "MEMBER",
   },
@@ -405,25 +405,13 @@ const members = [
   },
   {
     name: "Prasum Shrestha",
-=======
-    name: "Awashkar Shrestha Nagarkoti",
     position: "MEMBER",
   },
   {
-    name: "Lakshya Khanal",
->>>>>>> 98a1ec9c5bf25bd7cabc0ded8a91105a4a329aee
-    position: "MEMBER",
-  },
-  {
-<<<<<<< HEAD
     name: "Dilsan Basnet",
-=======
-    name: "Pari Adhikari",
->>>>>>> 98a1ec9c5bf25bd7cabc0ded8a91105a4a329aee
     position: "MEMBER",
   },
   {
-<<<<<<< HEAD
     name: "Pratik Chalise", 
     position: "MEMBER",
   },
@@ -504,10 +492,7 @@ const members = [
     position: "MEMBER",
   },
     {
-    name: "Sijan Poudel"}, 
-=======
-    name: "Abhay Mishra",
->>>>>>> 98a1ec9c5bf25bd7cabc0ded8a91105a4a329aee
+    name: "Sijan Poudel", 
     position: "MEMBER",
   },
   {
@@ -536,10 +521,6 @@ const members = [
   },
   {
     name: "Aayush Kalwar",
-    position: "MEMBER",
-  },
-  {
-    name: "Sajal Shrestha",
     position: "MEMBER",
   },
   {
@@ -579,6 +560,7 @@ const members = [
     name: "Danish Chidi",
     position: "MEMBER",
   },
+  
 ];
 
 // Advisors
