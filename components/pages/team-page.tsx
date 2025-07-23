@@ -145,22 +145,168 @@ const boardMembers = [
 
 // Regular Members (names only)
 const members = [
+  
   {
-    name: "NAYAN ACHARYA",
+    name: "Khusi Nisa Banu",
     position: "MEMBER",
   },
   {
-    name: "NAYAN ACHARYA",
+    name: "Rohit Kumar teli",
+    position: "MEMBER",
+  },
+ {
+    name: "Roshani Bhattarai",
+    position: "MEMBER",
+  },
+ {
+    name: "Abhisek Panthi",
+    position: "MEMBER",
+  },
+ {
+    name: "Prashamsa Gautam",
+    position: "MEMBER",
+  },
+ {
+    name: "Sitasma Pandey",
+    position: "MEMBER",
+  },
+ {
+    name: "Jenny thapa",
+    position: "MEMBER",
+  },
+ {
+    name: "Shreejit Paudel",
+    position: "MEMBER",
+  },
+ {
+    name: "Aarakshya Khanal",
+    position: "MEMBER",
+  },
+ {
+    name: "Utkarsh Shukla",
+    position: "MEMBER",
+  },
+ {
+    name: "Sujal Dhungana",
+    position: "MEMBER",
+  },
+ {
+    name: "Mansoon Paudel",
+    position: "MEMBER",
+  },
+ {
+    name: "Lija Thapa Magar",
+    position: "MEMBER",
+  },
+ {
+    name: "Aakriti thapa",
+    position: "MEMBER",
+  },
+ {
+    name: "Arun Thakur",
+    position: "MEMBER",
+  },
+ {
+    name: "Sushant Barma",
+    position: "MEMBER",
+  },
+
+  {
+    name: "Prasoon Kandel",
+    position: "MEMBER",
+  },
+  {
+    name: "Prasum Shrestha",
     position: "MEMBER",
   
   },
   {
-    name: "Nayan Acharya",
+    name: "Dilsan Basnet",
     position: "MEMBER",
   
   },
   {
-    name: "Nayan Acharya", 
+    name: "Pratik Chalise", 
+    position: "MEMBER",
+  },
+ {
+    name: "Basudeb Pandey", 
+    position: "MEMBER",
+  },
+   {
+    name: "Giniz Gyawali", 
+    position: "MEMBER",
+  },
+  {
+    name: "Sakshyam gautam", 
+    position: "MEMBER",
+  },
+  {
+    name: "Kapil Bahadur Chhetri", 
+    position: "MEMBER",
+  },
+   {
+    name: "Siddhant poudel", 
+    position: "MEMBER",
+  },
+   {
+    name: "Utsab Pandey", 
+    position: "MEMBER",
+  },
+   {
+    name: "Bibek pandey", 
+    position: "MEMBER",
+  },
+   {
+    name: "Sushan Rayamajhi", 
+    position: "MEMBER",
+  },
+   {
+    name: "Amrit Poudel", 
+    position: "MEMBER",
+  },
+   {
+    name: "Ayam Paudel", 
+    position: "MEMBER",
+  },
+   {
+    name: "Abhishek Subedi", 
+    position: "MEMBER",
+  },
+   {
+    name: "samip bhandari", 
+    position: "MEMBER",
+  },
+   {
+    name: "Aayush budhathoki", 
+    position: "MEMBER",
+  },
+   {
+    name: "Dipak Kc", 
+    position: "MEMBER",
+  },
+   {
+    name: "Khuman Adhikari", 
+    position: "MEMBER",
+  },
+   {
+    name: "Arpan Poudel.", 
+    position: "MEMBER",
+  },
+   {
+    name: "Aaditya bashyal", 
+    position: "MEMBER",
+  },
+    {
+    name: "Spandan Baral BK", 
+    position: "MEMBER",
+  }, 
+   {
+    name: "Pratik Adhikari", 
+    position: "MEMBER",
+  },
+    {
+    name: "Sijan Poudel", 
     position: "MEMBER",
   },
 ]
