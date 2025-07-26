@@ -336,7 +336,16 @@ const boardMembers = [{
 ];
 
 // Regular Members Data
-const members = [{
+const members = [
+    {
+        type: "member",
+        name: "Abhi Tiwari",
+        position: "MEMBER",
+        grade: 10,
+        createdAt: new Date(),
+        updatedAt: new Date()
+    },
+    {
         type: "member",
         name: "Khusi Nisa Banu",
         position: "MEMBER",
@@ -368,22 +377,8 @@ const members = [{
         createdAt: new Date(),
         updatedAt: new Date()
     },
-    {
-        type: "member",
-        name: "Prashamsa Gautam",
-        position: "MEMBER",
-        grade: 10,
-        createdAt: new Date(),
-        updatedAt: new Date()
-    },
-    {
-        type: "member",
-        name: "Sitasma Pandey",
-        position: "MEMBER",
-        grade: 10,
-        createdAt: new Date(),
-        updatedAt: new Date()
-    },
+   
+   
     {
         type: "member",
         name: "Jenny thapa",
@@ -392,14 +387,7 @@ const members = [{
         createdAt: new Date(),
         updatedAt: new Date()
     },
-    {
-        type: "member",
-        name: "Shreejit Paudel",
-        position: "MEMBER",
-        grade: 10,
-        createdAt: new Date(),
-        updatedAt: new Date()
-    },
+    
     {
         type: "member",
         name: "Aarakshya Khanal",
@@ -416,22 +404,8 @@ const members = [{
         createdAt: new Date(),
         updatedAt: new Date()
     },
-    {
-        type: "member",
-        name: "Sujal Dhungana",
-        position: "MEMBER",
-        grade: 10,
-        createdAt: new Date(),
-        updatedAt: new Date()
-    },
-    {
-        type: "member",
-        name: "Mansoon Paudel",
-        position: "MEMBER",
-        grade: 10,
-        createdAt: new Date(),
-        updatedAt: new Date()
-    },
+    
+    
     {
         type: "member",
         name: "Lija Thapa Magar",
