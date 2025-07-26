@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Calendar, Users, Trophy } from "lucide-react"
 import { useTeam } from "@/contexts/TeamContext"
+import AdSenseAd from "@/components/ui/adsense-ad"
 import React from "react"
 
 const recentProjects = [
@@ -128,6 +129,17 @@ export default function HomePage() {
                 </motion.div>
               ))}
             </motion.div>
+          </div>
+        </section>
+
+        {/* Ad Section */}
+        <section className="py-10 px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <AdSenseAd 
+              adSlot="9767595606" 
+              responsive={true}
+              className="my-8"
+            />
           </div>
         </section>
 
