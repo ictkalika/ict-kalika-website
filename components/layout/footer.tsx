@@ -53,14 +53,66 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">© 2025 ICT Club of K.M.G.S.S. All rights reserved. | Est. 2079</p>
-          <p className="text-gray-400 text-sm mt-2">
-            Crafted with passion by NAYAN & NARAYAN
-          </p>
-            <p className="text-gray-400 text-sm mt-2">
-           Contributors: Shasank Shrestha | Anshu Aryal
-          </p>
+        <div className="border-t border-white/10 mt-8 pt-8">
+          <div className="text-center mb-6">
+            <p className="text-gray-400 text-sm">© 2025 ICT Club of K.M.G.S.S. All rights reserved. | Est. 2079</p>
+          </div>
+          
+          {/* Development Team Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Lead Developers */}
+            <div className="text-center">
+              <h4 className="text-white font-semibold text-sm mb-3 glow-text">Lead Developers</h4>
+              <div className="flex justify-center space-x-6">
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#5bbcff] to-[#9bd3ff] rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-black font-bold text-sm">N</span>
+                  </div>
+                  <p className="text-gray-300 text-xs font-medium">NAYAN</p>
+                  <p className="text-gray-500 text-xs">Full Stack</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-[#5bbcff] to-[#9bd3ff] rounded-full flex items-center justify-center mx-auto mb-2">
+                    <span className="text-black font-bold text-sm">N</span>
+                  </div>
+                  <p className="text-gray-300 text-xs font-medium">NARAYAN</p>
+                  <p className="text-gray-500 text-xs">Full Stack</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contributors */}
+            <div className="text-center">
+              <h4 className="text-white font-semibold text-sm mb-3 glow-text">Contributors</h4>
+              <div className="flex justify-center space-x-4">
+                <div className="text-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-gray-600 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-1">
+                    <span className="text-white font-bold text-xs">S</span>
+                  </div>
+                  <p className="text-gray-400 text-xs">Shasank</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-gray-600 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-1">
+                    <span className="text-white font-bold text-xs">A</span>
+                  </div>
+                  <p className="text-gray-400 text-xs">Anshu</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-gray-600 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-1">
+                    <span className="text-white font-bold text-xs">H</span>
+                  </div>
+                  <p className="text-gray-400 text-xs">Himanshu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Thank you message */}
+          <div className="text-center mt-6 pt-4 border-t border-white/5">
+            <p className="text-gray-500 text-xs">
+              💙 Crafted with passion for the ICT Club community
+            </p>
+          </div>
         </div>
       </div>
     </motion.footer>

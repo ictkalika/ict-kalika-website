@@ -4,19 +4,24 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Calendar, Users, Trophy } from "lucide-react"
+import { useTeam } from "@/contexts/TeamContext"
 import React from "react"
 
 const recentProjects = [
  
 ]
 
-const stats = [
-  { icon: Users, label: "Active Members", value: "150+" },
-  { icon: Calendar, label: "Events Held", value: "50+" },
-  { icon: Trophy, label: "Students Impacted", value: "500+" },
-]
-
 export default function HomePage() {  
+  const { boardMembers, members, advisors, loading } = useTeam();
+  
+  // Calculate dynamic stats based on actual team data
+  const totalMembers = boardMembers.length + members.length + advisors.length;
+  
+  const stats = [
+    { icon: Users, label: "Active Members", value: loading ? "Loading..." : `${totalMembers}+` },
+    { icon: Calendar, label: "Events Held", value: "50+" },
+    { icon: Trophy, label: "Students Impacted", value: "500+" },
+  ]  
   return (
     <>
       {/* AMP ad script injection */}

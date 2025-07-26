@@ -105,5 +105,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <ClientLayout>{children}</ClientLayout>
+  return (
+    <html lang="en">
+      <head>
+        <script 
+          async 
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7528456570041321"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
+    </html>
+  )
 }

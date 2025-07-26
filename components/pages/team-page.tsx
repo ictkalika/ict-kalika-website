@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { useTeam } from "@/contexts/TeamContext";
 import {
   X,
   Linkedin,
@@ -30,38 +31,7 @@ interface TeamMember {
 
 export default function TeamPage() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-  const [boardMembers, setBoardMembers] = useState<TeamMember[]>([]);
-  const [members, setMembers] = useState<TeamMember[]>([]);
-  const [advisors, setAdvisors] = useState<TeamMember[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    const fetchTeamData = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        
-        const response = await fetch('/api/team');
-        if (!response.ok) {
-          throw new Error('Failed to fetch team data');
-        }
-        
-        const data = await response.json();
-        
-        setBoardMembers(data.filter((member: TeamMember) => member.type === 'board'));
-        setMembers(data.filter((member: TeamMember) => member.type === 'member'));
-        setAdvisors(data.filter((member: TeamMember) => member.type === 'advisor'));
-      } catch (err) {
-        console.error('Error fetching team data:', err);
-        setError('Failed to load team data. Please try again later.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchTeamData();
-  }, []);
+  const { boardMembers, members, advisors, loading, error } = useTeam();
 
   const getSocialIcon = (platform: string, url: string) => {
     const iconProps = {
