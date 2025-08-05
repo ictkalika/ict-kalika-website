@@ -9,7 +9,7 @@
 
 
 #random
-/scripts/
+/scripts/seedDatabase.js
 
 # production
 /build
