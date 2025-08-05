@@ -13,6 +13,7 @@ interface TeamMember {
     [key: string]: string;
   };
   grade?: number;
+  order?: number;
   type: 'board' | 'member' | 'advisor';
 }
 

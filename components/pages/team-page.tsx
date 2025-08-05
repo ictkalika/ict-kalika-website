@@ -26,6 +26,7 @@ interface TeamMember {
     [key: string]: string;
   };
   grade?: number;
+  order?: number;
   type: 'board' | 'member' | 'advisor';
 }
 
@@ -128,7 +129,9 @@ export default function TeamPage() {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {boardMembers.map((member, index) => (
+            {boardMembers
+              .sort((a, b) => (a.order || 999) - (b.order || 999))
+              .map((member, index) => (
               <motion.div
                 key={member._id || member.name}
                 initial={{ opacity: 0, y: 50 }}
